@@ -1,0 +1,99 @@
+
+/**CONTENT PONTOS TURISTICOS*/
+.text h2{
+    color: red;
+}
+
+
+.title{
+    color: red;
+    text-align: center;
+}
+.text {
+    text-align: left;
+    color: black;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.video{
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+/** CONTENT CULTURE */
+
+#content_culture{
+    margin-top: 160px;
+}
+
+
+.text_culture h2{
+    text-align: left;
+    color: red;
+}
+
+.text_culture {
+    
+    text-align: left;
+    color: black;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.text_culture p {
+    margin-top: 2px;
+}
+
+.image_top_culture{
+    margin-left: 210px;
+    border:8px inset #5f6632  
+}
+
+.image_culture{
+
+    border: transparent thin solid;
+    margin: 0px 1px 10px 0;
+    width: 722px;
+    height: 265px;
+    background: rgb(70, 66, 66);
+    color: white;
+}    
+
+
+/** CONTENT HOME */
+
+#content_home{
+    margin-top: 160px;
+}
+
+.image_top_home{
+
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    width: 1000px;
+    border:8px inset #6a6d54  
+}
+
+.image_home img{
+    text-align: justify;
+    float: right;
+    height: 200px;
+    width: 200px;
+    
+}
+.hino_video{
+    float: right;
+    margin-right: 10%;
+}
+.hino {
+    margin-left: 15%;
+
+}
+
+/** GERAL*/
+.fontes{
+   margin-left: 25%;
+}
+
