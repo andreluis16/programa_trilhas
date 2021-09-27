@@ -1,54 +1,25 @@
-#form{
-    margin-left: 32%;
-    margin-top: 10%;
-}
-
-form {
-    height: 430px;
-    font-size: 15px;
-    background-color: #15095e;
-    max-width: 500px;
-}
-
 h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    color: red;
-
+    margin-bottom: 40px
 }
 
-input, textarea {
-    width: 200px;
-    padding: 10px;
-    color: black;
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 1px solid;
+label {
+    color: #333
 }
 
-.enviar {
-    cursor: pointer;
-    border-color: #000066;
-    box-shadow: 5px 0px 9px red;
-    background-color: #6b5f5f;
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid;
-    color: black;
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
 }
 
-textarea {
-    width: 400px;
-    height: 120px;
-    line-height: 20px;
-    max-width: 400px;
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
 }
 
-form label {
-    margin-left: 20px;
-    color: #FFFFFF;
-    font-weight: bold;
+.card {
+    margin-left: 10px;
+    margin-right: 10px
 }

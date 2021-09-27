@@ -6,57 +6,53 @@
 
 /* HEADER CSS */
 
-/* Style the header with a grey background and some padding */
-body{
-  overflow-y: scroll;
-  overflow-x: hidden;
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.dark-mode-body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 2s;
+}
+
+
+#header{
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dark-mode-header{
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 header{
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  
+  z-index: 1020;
 }
 
 #top{ 
-  overflow: hidden;
+  display: flex;
   background-color: #15095e;
-  padding: 4px 10px;
+  padding: 2px;
 }
 #top p{
-    color: #ffffff;
-    display: inline;
-    margin-left: 100px;
+  color: #ffffff;
 }
 #top a{
   color: #ffffff;  
-}
-
-#redes {
-  margin-left: 540px;
-}
-
-#redesSocias{
-    display: inline;
-    text-align: right;
-}
-
-.logo{
-  margin-left: 25px;
-  position: absolute;
-  height: 89px;
-  width: 200px;
-}
+ }
 
 .header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  display: flex;
+  padding: 10px 10px;
 }
 
-/* Style the header links */
 .header a {
   float: left;
   color: black;
@@ -68,38 +64,17 @@ header{
   border-radius: 4px;
 }
 
-
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+.header div img {
+  display: flex;
+  width:100%;
+  height: 100px;
 }
 
-.header a img {
-  width: 200px;
-  height: 50px;
-}
+@media screen and (max-width: 1000px) {
 
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: #15095e;
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+  header{
+    position: relative;
+  }
   .header a {
     float: none;
     display: block;
@@ -108,16 +83,6 @@ header{
   .header-right {
     float: none;
   }
-  #top{
-    float: none;
-
-    text-align: center;
-  }
-  #redes{
-    float: none;
-
-    text-align: center;
-  }
-  
 }
-  
+
+

@@ -8,8 +8,12 @@
         <link rel="stylesheet" href="./assets/css/slide.css" type="text/css"/>
         <link rel="stylesheet" href="./assets/css/footer.css" type="text/css"/>
         <link rel="stylesheet" href="./assets/css/content.css" type="text/css"/>
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css" type="text/css"/>
+
         <!--SCRIPTS-->
-        <script type="text/javascript" src="./assets/js/router.js"></script>
+
+        <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
         <script type="text/javascript" src="./assets/js/Jquery.js"></script>
         <script type="text/javascript" src="./assets/js/slide.js"></script>
        
@@ -18,66 +22,70 @@
 
  
         <!-- HEADER -->    
-          <header>  
-            <div id="top">
-                <p class="bi bi-whatsapp"> (99)98105-1777 </p>
-                <p class="bi bi-envelope-fill"> nobloko80@gmail.com</p>
-                <a id="redes" href="https://www.facebook.com/andreluis.pereiradesoisa/" target="_blank"  class="bi bi-facebook"></a>
-                <a href="https://www.instagram.com/andreluis.pereir/" target="_blank" class="bi bi-instagram"></a>
-                <a href="https://github.com/Rudz1" target="_blank" class="bi bi-github"></a>
+        <nav class="container-fluid">  
+          <div id="top" class="row d-flex align-items-center">
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <a  class="bi bi-whatsapp"href="https://web.whatsapp.com/" target="_blank">(99)98105-1777</a>  
             </div>
-            <a href="/"><img class="logo" src="./media/images/logo.jpg" alt=""></a>
-            <div class="header">
-          
-            <div class="header-right">
-                <a href="/">Home</a>
-                <a class="active" href="./pontos-turisticos.html">Pontos Turisticos</a>
-                <a href="./cultura.html">Cultura</a>
-                <a href="./contato.html">Contato</a>
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <a class="bi bi-envelope-fill"href="https://mail.google.com/" target="_blank"> andrelpsdev@gmail.com</a>
+            </div>    
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <button class="btn btn-outline-secondary" onclick="fontBigger()" id="">A+</button>
+              <button class="btn btn-outline-secondary" onclick="fontLower()" id="">A-</button>
+              <button class="btn btn-outline-secondary" onclick="darkTheme()">Tema Escuro</button>
+            </div>    
+          </div>
+          <div class="header row d-flex align-items-center">
+            <div class="col-xl-3 col-sm-3 mb-2">
+              <img class="img-fluid rounded" src="./media/images/logo.jpg" alt="">
             </div>
+            <div class="col-xl-5 mb-2">   
             </div>
-             </header>
+          <div class="col-xl-4 mb-2">
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="/">Home</a>
+              <a class="btn btn-outline-primary active" type="button" href="pontos-turisticos.html">Pontos Turisticos</a>
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="cultura.html">Cultura</a>
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="contato.html">Contato</a>
+          </div>
+          </div>
+        </nav>
   
         <!-- SLIDE -->
-       <section id="slide">
+       <section id="slide row">
 
-            <div class="container">
+            <div class="container col-12">
 
-              <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
+              <div class="mySlides row">
                   <img src="./media/images/santo-amaro.jpg">
               </div>
 
-              <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                  <img src="./media/images/lencoes-maranhenses.jpg">
+              <div class="mySlides row">    
+                 <img src="./media/images/lencoes-maranhenses.jpg">
               </div>
 
-              <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                  <img src="./media/images/lagoa-do-casso.jpg">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                  <img src="./media/images/chapada-das-mesas.jpg">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                  <img src="./media/images/carolina.jpg">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
+              <div class="mySlides row">
                   <img src="./media/images/barreirinhas.jpg">
               </div>
 
-
-              <div class="caption-container">
-                <p id="caption"></p>
+              <div class="mySlides row"> 
+                  <img src="./media/images/lagoa-do-casso.jpg">
               </div>
 
-              <div class="row">
+              <div class="mySlides row">   
+                  <img src="./media/images/chapada-das-mesas.jpg">
+              </div>
+              
+              <div class="mySlides row">
+                  <img src="./media/images/carolina.jpg">
+              </div>
+
+
+              <div class="caption-container row">
+                <p class="col-12" id="caption"></p>
+              </div>
+
+              <div class="row ">
                 <div class="column">
                   <img class="demo cursor" src="./media/images/santo-amaro.jpg"  alt="Santo Amaro">
                 </div>
@@ -102,9 +110,11 @@
 
       </section> 
         <!-- CONTENT -->
-        <section id="content">
+        <section id="content container-fluid">
 
-            <div class="text">
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6">
               <h2>Santo Amaro</h2>
               <p>Está é uma cidade pouco conhecida pelos turistas e os que a conhecem muitas vezes optam por não visitar Santo Amaro devido ao difícil acesso para chegar até lá. Mas, posso dizer que todo o difícil acesso vale a pena mediante ao paraíso que você encontrará.
 
@@ -113,13 +123,21 @@
                 Santo Amaro é um dos lugares para viajar no Maranhão mais incríveis que você vai encontrar. Com lagoas gigantes e pouco movimentadas, é possivel se deleitar com essas obras da natureza.
                 
                 Por estar colada ao Parque Nacional, se torna fácil visitá-lo e conhecer as famosas lagoas: Lagoa das Cabras, a Lagoa das Andorinhas e a Lagoa da Betania.</p>
-            </div>
-
-              <div class="video">
-                <iframe width="668" height="315" src="https://www.youtube.com/embed/gkkg7GLdusc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-xl-3"></div>
               </div>
 
-            <div class="text">
+              <div class="row container-fluid">
+                <div class="col-xl-3"></div>
+                <div class="col-xl-6 col-sm-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gkkg7GLdusc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-xl-3"></div>
+              </div>
+
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6">
               <h2>Lençóis Maranhenses</h2>
               <p>Sem dúvida um dos destinos mais famosos do Maranhão são os Lençóis Maranhenses que recebem turistas que vão de encontro as incríveis águas doces das lagoas que estão entre as dunas que formam uma vista que em primeiro momento torna difícil acreditar que é real.
 
@@ -127,70 +145,195 @@
                 
                 Gostou de conhecer os melhores lugares para viajar no Maranhão? Então confira agora mesmo os preços exclusivos das passagens aqui na Transportal Viagens e garanta muita economia!    
                 </p>
+              </div>
+              <div class="col-3"></div> 
             </div>
 
-            <div class="video">
-              <iframe width="668" height="315" src="https://www.youtube.com/embed/FdQBXH-3fJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/FdQBXH-3fJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-xl-3"></div> 
             </div>
 
-            <div class="text">
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6">
               <h2>Barreirinhas</h2>
               <p>Entre todos os lugares para viajar no Maranhão, Barreirinhas está entre os mais visitados. Os turistas buscam quase sempre o mesmo: Passeios pelas dunas que contam com lagoas que se formam pelas águas da chuva e conhecer o manguezal que é cortado pelo Rio Preguiça.
                 Além disso, as praias da região estão sempre com visitantes apreciando toda a sua beleza, além de abrigar diferentes povoados.</p>
+              </div>
+              <div class="col-xl-3"></div> 
             </div>
 
-            <div class="video">
-            <iframe width="668" height="315" src="https://www.youtube.com/embed/UEEemSLgm5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="row container-fluid">
+            <div class="col-xl-3"></div>
+            <div class="col-xl-6 col-sm-6">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/UEEemSLgm5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <div class="col-xl-3"></div> 
+          </div>
           
-            <div class="text">
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6">
               <h2>Lagoa do Cassó</h2>
               <p>Esta lagoa fica localizada na cidade Primeira Cruz, que fica a 207 km da capital. Apesar de estar em uma região de difícil acesso muitos turistas enfrentam o desafio para conhecer a Lagoa do Cassó, que exatamente por ser tão isolada se mantém perfeitamente limpa e livre de poluição.
 
                 Toda a preservação deste lugar é feita pelos próprios moradores que vivem a partir dos recursos naturais existentes por lá. A Lagoa do Cassó é composta de águas calmas, quase transparentes e cercada pelas matas nativas, que embelezam e dão ainda mais o ar de pureza que só aquela região tem.</p>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
 
-            <div class="video">
-              <iframe width="668" height="315" src="https://www.youtube.com/embed/1SRkqTu2rzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/1SRkqTu2rzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
 
-            <div class="text">
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6">
               <h2>Chapada das mesas</h2>
               <p>Chapada das Mesas é um dos paraísos intocados da natureza aqui do nosso país, tanto é que para visitar a região só é possível mediante a contratação de agências que oferecem o roteiro para a cidade.
                 Lá é possível encontrar uma grande variedade de cânions, cachoeiras, cerrados, muitas estradas de terra e formações rochosas incríveis. Os melhores meses para visitar a cidade são: Maio, Junho e Julho.
                 A dica é aproveitar ao máximo a Chapada das Mesas, já que você deve ir e retornar no mesmo dia. Não deixe de visitar a Cachoeira São Romão em que a entrada custa R$: 10,00 por pessoa e a Cachoeira da Prata que a entrada custa R$: 5,00.</p>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
 
-            <div class="video">
-              <iframe width="668" height="315" src="https://www.youtube.com/embed/G-rKcCL-XRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/G-rKcCL-XRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
 
-            <div class="text"s>
+            <div class="text row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6">
               <h2>Carolina</h2>
               <p>Se você se encantou com a Chapada das Mesas vai gostar de saber que o ponto de partida é a cidade de Carolina. Uma cidade simpática e muito receptiva com muitas opções de pousadas e hotéis com preço bem em conta.
                 Localizada na região sul do Maranhão, Carolina está às margens do Rio Tocantins e é um verdadeiro paraíso para quem curte ecoturismo, já que conta com um grande número de cachoeiras, cânions e formações rochosas. Sem dúvida um dos melhores lugares para viajar no Maranhão.</p>
+              </div>
+              <div class="col-3"></div>
             </div>
 
-            <div class="video">
-              <iframe width="668" height="315" src="https://www.youtube.com/embed/dQwrYf6IO0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row container-fluid">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQwrYf6IO0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
 
-              
-            <div class="fontes">
-              <p>Fontes: <a href="https://www.transportal.com.br/noticias/rodoviaria-fortaleza/melhores-lugares-para-viajar-no-maranhao/" target="_blank">portal de transportes e turismos do brasil</a>
-              </p>
-            </div>
+          
         </section>
         
         <!-- FOOTER -->
-        <footer id="rodape">  
+        <footer class="page-footer font-small bg-dark text-light">
 
-            <section>
-                <p>Todos os direitos reservados  -  André Luis Pereira</p> 
-            </section>
-
+          <div style="background-color: #635a5a;">
+            <div class="container">
+      
+              <div class="row py-4 d-flex align-items-center">
+      
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  <h6 class="mb-0">Conecte-se conosco nas redes sociais!</h6>
+                </div>
+      
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+      
+                  <a href="https://www.facebook.com/andreluis.pereiradesoisa" target="_blank">
+                    <i class="bi bi-facebook white-text mr-4"> </i>
+                  </a>
+      
+                  <a href="https://github.com/Rudz1" target="_blank">
+                    <i class="bi bi-github white-text mr-4"> </i>
+                  </a>
+        
+                  <a href="https://www.linkedin.com/in/andr%C3%A9-luis-pereira-b251331a2/" target="_blank">
+                    <i class="bi bi-linkedin white-text mr-4"> </i>
+                  </a>
+      
+                  <a href="https://www.instagram.com/andreluis.pereir/" target="_blank">
+                    <i class="bi bi-instagram white-text"> </i>
+                  </a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+          </div>
+      
+      
+          <div class="container text-center text-md-left mt-5">
+      
+            <div class="row mt-3">
+      
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img width="100%" height="200px" src="./media/images/logo2.jpeg" alt="">
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              </div>
+      
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Paginas</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="/">Home</a>
+                </p>
+                <p>
+                  <a href="pontos-turisticos.html">Pontos Turisticos</a>
+                </p>
+                <p>
+                  <a href="cultura.html">Cultura</a>
+                </p>
+                <p>
+                  <a href="contato.html">Contato</a>
+                </p>
+      
+              </div>
+      
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Fontes</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="https://www.transportal.com.br/noticias/rodoviaria-fortaleza/melhores-lugares-para-viajar-no-maranhao/" target="_blank">portal de transportes e turismos do brasil</a>
+                </p> 
+              </div>
+      
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Contato</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <i class="bi bi-house-door mr-3"></i> Porto Franco, Tv.Tocantins 253, MA
+                </p>
+                <p>
+                  <i class="bi bi-envelope mr-3"></i> andrelpsdev@gmail.com
+                </p>
+                <p>
+                  <i class="bi bi-phone mr-3"></i> (99) 98105-1777
+                </p>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
+          <div class="footer-copyright text-center py-3">
+              <p>Todos os Direitos Reservados - André Luis Pereira</p>
+          </div>
+      
         </footer>
-
     </body>
 </html>
 

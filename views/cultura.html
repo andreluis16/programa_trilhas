@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="./assets/css/slide.css" type="text/css"/>
         <link rel="stylesheet" href="./assets/css/footer.css" type="text/css"/>
         <link rel="stylesheet" href="./assets/css/content.css" type="text/css"/>
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css" type="text/css"/>
+
         <!--SCRIPTS-->
-        <script type="text/javascript" src="./assets/js/router.js"></script>
+        <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
         <script type="text/javascript" src="./assets/js/Jquery.js"></script>
         <script type="text/javascript" src="./assets/js/slide.js"></script>
        
@@ -18,88 +21,236 @@
 
  
         <!-- HEADER -->    
-          <header>  
-            <div id="top">
-                <p class="bi bi-whatsapp"> (99)98105-1777 </p>
-                <p class="bi bi-envelope-fill"> nobloko80@gmail.com</p>
-                <a id="redes" href="https://www.facebook.com/andreluis.pereiradesoisa/" target="_blank"  class="bi bi-facebook"></a>
-                <a href="https://www.instagram.com/andreluis.pereir/" target="_blank" class="bi bi-instagram"></a>
-                <a href="https://github.com/Rudz1" target="_blank" class="bi bi-github"></a>
+        <nav class="container-fluid">  
+          <div id="top" class="row d-flex align-items-center">
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <a  class="bi bi-whatsapp"href="https://web.whatsapp.com/" target="_blank">(99)98105-1777</a>  
             </div>
-            <a href="/"><img class="logo" src="./media/images/logo.jpg" alt=""></a>
-            <div class="header">
-        
-            <div class="header-right">
-                <a href="/">Home</a>
-                <a href="./pontos-turisticos.html">Pontos Turisticos</a>
-                <a class="active" href="./cultura.html">Cultura</a>
-                <a href="./contato.html">Contato</a>
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <a class="bi bi-envelope-fill"href="https://mail.google.com/" target="_blank"> andrelpsdev@gmail.com</a>
+            </div>    
+            <div class="col-xl-4 mb-2 d-flex justify-content-center">
+              <button class="btn btn-outline-secondary" onclick="fontBigger()" id="">A+</button>
+              <button class="btn btn-outline-secondary" onclick="fontLower()" id="">A-</button>
+              <button class="btn btn-outline-secondary" onclick="darkTheme()" id="">Tema Escuro</button>
+            </div>    
+          </div>
+          <div class="header row d-flex align-items-center">
+            <div class="col-xl-3 col-sm-3 mb-2">
+              <img class="img-fluid rounded" src="./media/images/logo.jpg" alt="">
             </div>
+            <div class="col-xl-5 mb-2">
             </div>
-             </header>
-  
-        
+          <div class="col-xl-4 mb-2">
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="/">Home</a>
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="pontos-turisticos.html">Pontos Turisticos</a>
+              <a class="btn btn-outline-primary active" type="button" href="cultura.html">Cultura</a>
+              <a class="btn btn-sm btn-outline-secondary" type="button" href="contato.html">Contato</a>
+          </div>
+          </div>
+        </nav>
 
+   
         <!-- CONTENT -->
-        <section id="content_culture">
- 
-           <img class="image_top_culture" src="./media/images/cultura.jpg" alt="">  
-        
-          <div class="text_culture">
-            <h2>Bumba-Meu-Boi</h2>
-            <img class="image_culture" src="./media/images/bumbameuboi.jpg.jpg" alt="">
-            <p>
-              
-              Num espetáculo de cores, danças e ritmos, o Bumba-Meu-Boi é a expressão máxima da cultura popular do Maranhão. Elevado a Patrimônio Imaterial do povo brasileiro, a manifestação tem origens indefinidas, mas elementos culturais africanos e europeus, introduzidos 
-              principalmente por meio da religiosidade, são evidentes. Nas comunidades que fazem a brincadeira, as celebrações e o trabalho em torno da festa duram praticamente o ano inteiro. Um dos desafios é preparar o couro do boi, revestimento de camurça belamente decorado 
-              com canutilhos que recobrem o corpo do animal, pois é de bom tom que este seja renovado a cada temporada. Mas é durante os festejos juninos que ele reina absoluto, arrastando multidões e encantando quem assiste pela primeira vez suas apresentações.</p>
+        <section id="content_culture" class="container-fluid">
+          <div class="row">
+            <div class="col-xl-1"></div>
+              <div class="col-xl-10 col-sm-10">
+                <img class="image_top_culture" src="./media/images/cultura.jpg" alt=""> 
+              </div>
+            <div class="col-xl-1"></div> 
+          </div>
+          <div class="row">
+              <div class="col-xl-3"></div>
+                <div class="col-xl-6"><h2>Bumba-Meu-Boi</h2></div>
+              <div class="col-xl-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6"><img class="image_culture" src="./media/images/bumbameuboi.jpg.jpg" alt=""></div>
+            <div class="col-xl-3"></div>
+          </div>
+          <div class="text_culture row">
+            <div class="col-xl-3"></div>
+              <div class="col-xl-6">
+                <p>
+                
+                Num espetáculo de cores, danças e ritmos, o Bumba-Meu-Boi é a expressão máxima da cultura popular do Maranhão. Elevado a Patrimônio Imaterial do povo brasileiro, a manifestação tem origens indefinidas, mas elementos culturais africanos e europeus, introduzidos 
+                principalmente por meio da religiosidade, são evidentes. Nas comunidades que fazem a brincadeira, as celebrações e o trabalho em torno da festa duram praticamente o ano inteiro. Um dos desafios é preparar o couro do boi, revestimento de camurça belamente decorado 
+                com canutilhos que recobrem o corpo do animal, pois é de bom tom que este seja renovado a cada temporada. Mas é durante os festejos juninos que ele reina absoluto, arrastando multidões e encantando quem assiste pela primeira vez suas apresentações.</p>
+              </div>
+            <div class="col-xl-3"></div>
           </div>
           
-       
-
-          <div class="text_culture">
-            <h2>Tambor de Crioula</h2>
-            <p>
-              <img class="image_culture" src="./media/images/tambordecrioula.jpg" alt="">
-              Manifestação de raízes africanas que só existe no Maranhão, o Tambor de Crioula foi reconhecido em 2011 como Patrimônio Imaterial Brasileiro. Alegre, sensual e irreverente, pode ser apreciado ao ar livre, nas praças, casas e interior de terreiros por todo o Maranhão, mas sobretudo em São Luís.
-              Não tem uma época fixa de apresentação, mas pode-se observar uma concentração maior nos períodos que correspondem ao Carnaval, às festas de São João e a partir do 2° sábado de agosto, quando ocorrem também as rodas de Bumba-Boi. Os tocadores e coureiras, como são chamadas as dançarinas do Tambor, ganham as ruas espalhando animação e muito ritmo.
-              </p>
+          <div class="row">
+            <div class="col-xl-3"></div>
+              <div class="col-xl-6"><h2>Tambor de Crioula</h2></div>
+            <div class="col-xl-3"></div>
           </div>
-                    
-            <div class="text_culture">
-              <h2>Festa do Divino</h2>
-              <p>
-                <img class="image_culture" src="./media/images/festa-do-divino.jpg" alt="">
-                Comemorada, durante todo o mês de maio, desde os tempos coloniais, a Festa do Divino Espírito Santo é uma curiosa mistura de devoção ao Divino com homenagens ao Império. O “imperador” e sua corte, representada em trajes típicos, visitam as casas dos festeiros.
-                Os cortejos populares percorrem as ruas da cidade entoando cânticos até chegar à casa do Imperador, que recebe as homenagens com uma dança peculiar, entoando cantigas de louvor ao Divino ao toque das caixeiras. Ao final, são servidos bebidas e doces para a população que participa da festa. A festa do Divino é celebrada em todo o Maranhão, principalmente em Alcântara e São Luís.
-                Na cidade de Alcântara, os quilombolas encontravam refúgio para manter “quase que intactos” seus hábitos e crenças.</p>
+          <div class="row">
+            <div class="col-xl-3"></div>
+             <div class="col-xl-6 col-sm-6"><img class="image_culture" src="./media/images/tambordecrioula.jpg" alt=""></div>
+           <div class="col-xl-3"></div>
+          </div>
+          <div class="text_culture row">
+            <div class="col-xl-3"></div>
+              <div class="col-xl-6">
+                <p>  
+                Manifestação de raízes africanas que só existe no Maranhão, o Tambor de Crioula foi reconhecido em 2011 como Patrimônio Imaterial Brasileiro. Alegre, sensual e irreverente, pode ser apreciado ao ar livre, nas praças, casas e interior de terreiros por todo o Maranhão, mas sobretudo em São Luís.
+                Não tem uma época fixa de apresentação, mas pode-se observar uma concentração maior nos períodos que correspondem ao Carnaval, às festas de São João e a partir do 2° sábado de agosto, quando ocorrem também as rodas de Bumba-Boi. Os tocadores e coureiras, como são chamadas as dançarinas do Tambor, ganham as ruas espalhando animação e muito ritmo.
+                </p>
+              </div>
+            <div class="col-xl-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-3"></div>
+             <div class="col-xl-6"><h2>Festa do Divino</h2></div>
+            <div class="col-xl-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3"></div>
+              <div class="col-xl-6 col-sm-6"><img class="image_culture" src="./media/images/festa-do-divino.jpg" alt=""></div>
+           <div class="col-xl-3"></div>
+          </div>         
+            <div class="text_culture row">  
+              <div class="col-xl-3"></div>
+                <div class="col-xl-6">
+                <p>         
+                  Comemorada, durante todo o mês de maio, desde os tempos coloniais, a Festa do Divino Espírito Santo é uma curiosa mistura de devoção ao Divino com homenagens ao Império. O “imperador” e sua corte, representada em trajes típicos, visitam as casas dos festeiros.
+                  Os cortejos populares percorrem as ruas da cidade entoando cânticos até chegar à casa do Imperador, que recebe as homenagens com uma dança peculiar, entoando cantigas de louvor ao Divino ao toque das caixeiras. Ao final, são servidos bebidas e doces para a população que participa da festa. A festa do Divino é celebrada em todo o Maranhão, principalmente em Alcântara e São Luís.
+                  Na cidade de Alcântara, os quilombolas encontravam refúgio para manter “quase que intactos” seus hábitos e crenças.</p>
+                </div>
+              <div class="col-xl-3"></div>
             </div>
 
+            <div class="row">
+              <div class="col-xl-3"></div>
+               <div class="col-xl-6"><h2>Dança do Lelê</h2></div>
+              <div class="col-xl-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-xl-3"></div>
+                <div class="col-xl-6 col-sm-6"><img class="image_culture" src="./media/images/danca-do-lele.jpg" alt=""></div>
+              <div class="col-xl-3"></div>
+            </div>
 
-            <div class="text_culture">
-              <h2>Dança do Lelê</h2>
-              <p>
-                <img class="image_culture" src="./media/images/danca-do-lele.jpg" alt="">
-                A Dança do Lelê guarda em muitas de suas características os traços das danças de salão trazidas para o Brasil pelos povos ibéricos no século XIX. Trata-se de uma dança de salão profana, mas que costuma ser dançada em honra de determinados santos, ao longo do ano.
-                Encontrada no Maranhão, na região do Munim, particularmente nos municípios de Rosário (povoado de São Simão) e Axixá, a Dança do Lelê é também conhecida também como Dança do Péla (péla Porco), associada a um costume antigo de pessoas que se reuniam para matar galinhas e pelar porcos, o que garantia o alimento do dia posterior à festa.  
-              </p>
+            <div class="text_culture row">             
+              <div class="col-xl-3"></div>
+                <div class="col-xl-6">
+                <p>        
+                  A Dança do Lelê guarda em muitas de suas características os traços das danças de salão trazidas para o Brasil pelos povos ibéricos no século XIX. Trata-se de uma dança de salão profana, mas que costuma ser dançada em honra de determinados santos, ao longo do ano.
+                  Encontrada no Maranhão, na região do Munim, particularmente nos municípios de Rosário (povoado de São Simão) e Axixá, a Dança do Lelê é também conhecida também como Dança do Péla (péla Porco), associada a um costume antigo de pessoas que se reuniam para matar galinhas e pelar porcos, o que garantia o alimento do dia posterior à festa.  
+                </p>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
             
-            <div class="fontes">
-              <p>Fontes: <a href="https://www.facebook.com/portalculturamaranhense/" target="_blank">portal cultura maranhense</a> --
-                         <a href="https://www.turismo.ma.gov.br/cultura-e-festas-populares/" target="_blank">secretaria de estado e cultura</a></p>
-            </div>
         </section>
         
         <!-- FOOTER -->
-        <footer id="rodape">  
+        <footer class="page-footer font-small bg-dark text-light">
 
-            <section>
-                <p>Todos os direitos reservados  -  André Luis Pereira</p> 
-            </section>
-
+          <div style="background-color: #635a5a;">
+            <div class="container">
+      
+              <div class="row py-4 d-flex align-items-center">
+      
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  <h6 class="mb-0">Conecte-se conosco nas redes sociais!</h6>
+                </div>
+      
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+      
+                  <a href="https://www.facebook.com/andreluis.pereiradesoisa" target="_blank">
+                    <i class="bi bi-facebook white-text mr-4"> </i>
+                  </a>
+      
+                  <a href="https://github.com/Rudz1" target="_blank">
+                    <i class="bi bi-github white-text mr-4"> </i>
+                  </a>
+        
+                  <a href="https://www.linkedin.com/in/andr%C3%A9-luis-pereira-b251331a2/" target="_blank">
+                    <i class="bi bi-linkedin white-text mr-4"> </i>
+                  </a>
+      
+                  <a href="https://www.instagram.com/andreluis.pereir/" target="_blank">
+                    <i class="bi bi-instagram white-text"> </i>
+                  </a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+          </div>
+      
+      
+          <div class="container text-center text-md-left mt-5">
+      
+            <div class="row mt-3">
+      
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img width="100%" height="200px" src="./media/images/logo2.jpeg" alt="">
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              </div>
+      
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Paginas</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="/">Home</a>
+                </p>
+                <p>
+                  <a href="pontos-turisticos.html">Pontos Turisticos</a>
+                </p>
+                <p>
+                  <a href="cultura.html">Cultura</a>
+                </p>
+                <p>
+                  <a href="contato.html">Contato</a>
+                </p>
+      
+              </div>
+      
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Fontes</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <a href="https://www.facebook.com/portalculturamaranhense/" target="_blank">portal cultura maranhense</a>
+                </p> 
+                <p>
+                  <a href="https://www.turismo.ma.gov.br/cultura-e-festas-populares/" target="_blank">secretaria de estado e cultura</a></p>
+                </p>
+              </div>
+      
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+                <h6 class="text-uppercase font-weight-bold">Contato</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <i class="bi bi-house-door mr-3"></i> Porto Franco, Tv.Tocantins 253, MA
+                </p>
+                <p>
+                  <i class="bi bi-envelope mr-3"></i> andrelpsdev@gmail.com
+                </p>
+                <p>
+                  <i class="bi bi-phone mr-3"></i> (99) 98105-1777
+                </p>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
+          <div class="footer-copyright text-center py-3">
+              <p>Todos os Direitos Reservados - André Luis Pereira</p>
+          </div>
+      
         </footer>
-
     </body>
 </html>
 
