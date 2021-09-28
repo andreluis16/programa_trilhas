@@ -33,4 +33,5 @@ aux.addEventListener('click', ()=>{
     darkTheme('body')
     darkTheme('header')
     darkTheme('contact')
+    darkTheme('navbar')
 })
