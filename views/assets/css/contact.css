@@ -2,8 +2,18 @@ h1 {
     margin-bottom: 40px
 }
 
+
+#contact{
+    background-color: #f1f1f1f1;
+}
+
+#contact.dark-mode{
+    background-color: rgb(19, 18, 18);
+    transition: 2s;
+}
+
 label {
-    color: #333
+    color: rgb(75, 67, 67)
 }
 
 .btn-send {
@@ -14,12 +24,3 @@ label {
     margin-left: 3px
 }
 
-.help-block.with-errors {
-    color: #ff5050;
-    margin-top: 5px
-}
-
-.card {
-    margin-left: 10px;
-    margin-right: 10px
-}

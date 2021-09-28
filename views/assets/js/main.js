@@ -19,15 +19,18 @@ function fontLower(){
 }
 
 
-function darkTheme() {
-    var body = document.body
-   console.log(body);
-    body.classList.toggle("dark-mode-body")
+ function darkTheme(value) {
     
-  }
+    const darkBody =    document.getElementById(value)
+    if(darkBody){
+        darkBody.classList.toggle('dark-mode')
+    }
+}
 
-  function header() {
-    var header = document.getElementById("header")
-    console.log(header)
-    header.classList.toggle("dark-mode-header");
-  }
+  
+const aux = document.querySelector('.teste')
+aux.addEventListener('click', ()=>{
+    darkTheme('body')
+    darkTheme('header')
+    darkTheme('contact')
+})

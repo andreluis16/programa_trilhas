@@ -6,28 +6,26 @@
 
 /* HEADER CSS */
 
-
-
-body {
+#body {
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.dark-mode-body {
-  background-color: rgb(0, 0, 0);
+#body.dark-mode{
+  background-color: #1d1c1c;
   color: white;
   transition: 2s;
 }
-
 
 #header{
   background-color: #f1f1f1;
   color: black;
 }
 
-.dark-mode-header{
-    background-color: rgb(255, 255, 255);
+#header.dark-mode{
+    background-color: rgb(44, 40, 40);
     color: white;
+    transition: 2s;
 }
 
 header{
@@ -39,7 +37,7 @@ header{
 #top{ 
   display: flex;
   background-color: #15095e;
-  padding: 2px;
+  padding: 1px;
 }
 #top p{
   color: #ffffff;
@@ -55,7 +53,7 @@ header{
 
 .header a {
   float: left;
-  color: black;
+  color: rgb(109, 100, 100);
   text-align: center;
   padding: 12px;
   text-decoration: none;
