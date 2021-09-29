@@ -21,13 +21,15 @@ function fontLower(){
 
  function darkTheme(value) {
     
-    const darkBody =    document.getElementById(value)
+  
+
+    const darkBody = document.getElementById(value) 
     if(darkBody){
         darkBody.classList.toggle('dark-mode')
     }
+    
 }
-
-  
+ 
 const aux = document.querySelector('.teste')
 aux.addEventListener('click', ()=>{
     darkTheme('body')
